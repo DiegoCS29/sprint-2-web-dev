@@ -1,44 +1,94 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DevX - Ajuste Rápido: fotografe no momento certo, sem ajustes manuais.">
-  <meta name="author" content="Grupo DevX">
-  <title>DevX | Ajuste Rápido</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevX - Ajuste Rápido: fotografe no momento certo, sem ajustes manuais.">
+    <meta name="author" content="Grupo DevX">
+    <title>DevX | Ajuste Rápido</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="topo">
-    <nav class="menu">
-      <a href="index.html" class="logo">DevX</a>
+    <header class="topo">
+        <nav class="menu">
+            <a href="index.html" class="logo">DevX</a>
 
-      <ul class="menu-itens">
-        <li><a href="#problema">O problema</a></li>
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#recursos">Recursos</a></li>
-        <li><a href="#garantias">Garantias</a></li>
-      </ul>
-    </nav>
-  </header>
+            <ul class="menu-itens">
+                <li><a href="#problema">O problema</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#garantias">Garantias</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container hero-flex">
 
+                <div class="hero-texto">
+                    <span class="tag-azul">● Nova funcionalidade</span>
+
+                    <h1 class="titulo-grande">
+                        Fotografe no <br>
+                        momento certo. <br>
+                        <span class="destaque">Sem ajustes.</span>
+                    </h1>
+
+                    <p class="descricao-hero">
+                        O Ajuste Rápido detecta a cena e aplica automaticamente as
+                        melhores configurações — em até 2 segundos, sem você
+                        tocar em nada.
+                    </p>
+
+                    <div class="botoes-hero">
+                        <a href="#recursos" class="btn btn-azul">Conhecer a função</a>
+                        <a href="#como-funciona" class="btn btn-borda">Ver como funciona</a>
+                    </div>
+                </div>
+
+                <div class="slideshow">
+                    <div class="tags-camera">
+                        <span class="tag-info" id="tag-iso">ISO 200</span>
+                        <span class="tag-info" id="tag-aperture">f/1.8</span>
+                        <span class="tag-info" id="tag-shutter">1/120s</span>
+                    </div>
+
+                    <div class="camera-box">
+                        <div class="anel-camera">
+                            <div class="botao-camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="rodape-camera">
+                        <button type="button" id="btn-ajustar" class="btn btn-azul btn-mini">Ajuste Rápido</button>
+                    </div>
+
+                    <div class="bolinhas">
+                        <button type="button" class="bolinha ativa" data-slide="0" aria-label="Slide 1"></button>
+                        <button type="button" class="bolinha" data-slide="1" aria-label="Slide 2"></button>
+                        <button type="button" class="bolinha" data-slide="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
     </main>
 
-
-  <footer class="rodape">
-    <div class="container rodape-flex">
-      <a href="index.html" class="logo">DevX</a>
-      <ul class="links-rodape">
-        <li><a href="#problema">O problema</a></li>
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#recursos">Recursos</a></li>
-        <li><a href="#grupo">Grupo</a></li>
-      </ul>
-    </div>
-  </footer>
-
+    <footer class="rodape">
+        <div class="container rodape-flex">
+            <a href="index.html" class="logo">DevX</a>
+            <ul class="links-rodape">
+                <li><a href="#problema">O problema</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#grupo">Grupo</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
