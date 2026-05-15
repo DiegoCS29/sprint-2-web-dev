@@ -280,6 +280,160 @@ ul, ol { list-style: none; }
   transform: scale(1.3);
 }
 
+/* ============ PROBLEMA ============ */
+.problema {
+  background-color: var(--branco);
+  padding: 100px 0;
+}
+
+.problema-flex {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.problema-texto {
+  flex: 1 1 380px;
+}
+
+.titulo-secao {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--azul-escuro);
+  margin-bottom: 20px;
+}
+
+.titulo-branco {
+  color: var(--branco);
+}
+
+.paragrafo {
+  font-size: 15px;
+  color: var(--cinza-texto);
+  line-height: 1.7;
+  max-width: 460px;
+}
+
+.paragrafo-claro {
+  color: var(--texto-claro);
+}
+
+.lista-problemas {
+  flex: 1 1 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-problema {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: var(--azul-fundinho);
+  padding: 20px 24px;
+  border-radius: 12px;
+}
+
+.iconinho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--branco);
+  border-radius: 8px;
+  color: var(--azul);
+  flex-shrink: 0;
+}
+
+.iconinho svg {
+  width: 18px;
+  height: 18px;
+}
+
+.texto-item h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--azul-escuro);
+  margin-bottom: 4px;
+}
+
+.texto-item p {
+  font-size: 13px;
+  color: var(--cinza-texto);
+  line-height: 1.5;
+}
+
+
+/* ============ COMO FUNCIONA ============ */
+.como-funciona {
+  background-color: var(--azul-fundinho);
+  padding: 100px 0;
+}
+
+.cabecalho-secao {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.alinhamento-esquerdo {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.cabecalho-secao .paragrafo { margin: 0 auto; }
+.alinhamento-esquerdo .paragrafo { margin: 0; }
+
+.passos {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.passo {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.numero-passo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--azul);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.numero-claro {
+  background-color: rgba(46, 91, 255, 0.3);
+  color: var(--azul);
+}
+
+.passo h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--azul-escuro);
+}
+
+.passo p {
+  font-size: 13px;
+  color: var(--cinza-texto);
+  line-height: 1.5;
+  max-width: 220px;
+}
+
 /* ============ RODAPE ============ */
 .rodape {
   background-color: var(--azul-escuro);
