@@ -1,348 +1,392 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="DevX - Ajuste Rápido: fotografe no momento certo, sem ajustes manuais.">
+        <meta name="author" content="Grupo DevX">
+        <title>DevX | Ajuste Rápido</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DevX - Ajuste Rápido: fotografe no momento certo, sem ajustes manuais.">
-    <meta name="author" content="Grupo DevX">
-    <title>DevX | Ajuste Rápido</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+        <header class="topo">
+            <nav class="menu">
+                <a href="index.html" class="logo">DevX</a>
 
-<body>
-
-    <header class="topo">
-        <nav class="menu">
-            <a href="index.html" class="logo">DevX</a>
-
-            <ul class="menu-itens">
-                <li><a href="#problema">O problema</a></li>
-                <li><a href="#como-funciona">Como funciona</a></li>
-                <li><a href="#recursos">Recursos</a></li>
-                <li><a href="#garantias">Garantias</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero" id="hero">
-            <div class="container hero-flex">
-
-                <div class="hero-texto">
-                    <span class="tag-azul">● Nova funcionalidade</span>
-
-                    <h1 class="titulo-grande">
-                        Fotografe no <br>
-                        momento certo. <br>
-                        <span class="destaque">Sem ajustes.</span>
-                    </h1>
-
-                    <p class="descricao-hero">
-                        O Ajuste Rápido detecta a cena e aplica automaticamente as
-                        melhores configurações — em até 2 segundos, sem você
-                        tocar em nada.
-                    </p>
-
-                    <div class="botoes-hero">
-                        <a href="#recursos" class="btn btn-azul">Conhecer a função</a>
-                        <a href="#como-funciona" class="btn btn-borda">Ver como funciona</a>
-                    </div>
-                </div>
-
-                <div class="slideshow">
-                    <div class="tags-camera">
-                        <span class="tag-info" id="tag-iso">ISO 200</span>
-                        <span class="tag-info" id="tag-aperture">f/1.8</span>
-                        <span class="tag-info" id="tag-shutter">1/120s</span>
-                    </div>
-
-                    <div class="camera-box">
-                        <div class="anel-camera">
-                            <div class="botao-camera"></div>
-                        </div>
-                    </div>
-
-                    <div class="rodape-camera">
-                        <button type="button" id="btn-ajustar" class="btn btn-azul btn-mini">Ajuste Rápido</button>
-                    </div>
-
-                    <div class="bolinhas">
-                        <button type="button" class="bolinha ativa" data-slide="0" aria-label="Slide 1"></button>
-                        <button type="button" class="bolinha" data-slide="1" aria-label="Slide 2"></button>
-                        <button type="button" class="bolinha" data-slide="2" aria-label="Slide 3"></button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="problema" id="problema">
-            <div class="container problema-flex">
-
-                <div class="problema-texto">
-                    <span class="tag-clara">O problema</span>
-
-                    <h2 class="titulo-secao">
-                        Configurar a câmera <br>
-                        é difícil e lento
-                    </h2>
-
-                    <p class="paragrafo">
-                        Antes do Ajuste Rápido, cada foto exigia ajustes manuais complexos
-                        — e o momento perfeito se perdia enquanto o usuário tentava acertar
-                        ISO, foco e exposição.
-                    </p>
-                </div>
-
-                <ul class="lista-problemas">
-                    <li class="item-problema">
-                        <div class="iconinho">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12 6 12 12 16 14" />
-                            </svg>
-                        </div>
-                        <div class="texto-item">
-                            <h3>Configurações manuais complexas</h3>
-                            <p>ISO, exposição, foco e balanço de branco — tudo manual, tudo lento demais.</p>
-                        </div>
-                    </li>
-
-                    <li class="item-problema">
-                        <div class="iconinho">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </div>
-                        <div class="texto-item">
-                            <h3>Momentos perdidos</h3>
-                            <p>Enquanto o usuário ajusta as configurações, a cena ideal já passou.</p>
-                        </div>
-                    </li>
-
-                    <li class="item-problema">
-                        <div class="iconinho">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M12 2 L12 22 M2 12 L22 12" />
-                            </svg>
-                        </div>
-                        <div class="texto-item">
-                            <h3>Resultados inconsistentes</h3>
-                            <p>Luz diferente, modo errado — fotos sempre aquém do esperado.</p>
-                        </div>
-                    </li>
+                <ul class="menu-itens">
+                    <li><a href="#problema">O problema</a></li>
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#garantias">Garantias</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
+            </nav>
+        </header>
 
-            </div>
-        </section>
+        <main>
 
+            <section class="hero" id="hero">
+                <div class="container hero-flex">
 
-        <section class="como-funciona" id="como-funciona">
-            <div class="container">
+                    <div class="hero-texto">
+                        <span class="tag-azul">● Nova funcionalidade</span>
 
-                <header class="cabecalho-secao">
-                    <span class="tag-clara">Como funciona</span>
-                    <h2 class="titulo-secao">4 passos, 1 toque</h2>
-                    <p class="paragrafo">
-                        Do abrir a câmera à foto perfeita, tudo em menos de 2 segundos.
-                    </p>
-                </header>
+                        <h1 class="titulo-grande">
+                            Fotografe no <br>
+                            momento certo. <br>
+                            <span class="destaque">Sem ajustes.</span>
+                        </h1>
 
-                <ol class="passos">
-                    <li class="passo">
-                        <div class="numero-passo">1</div>
-                        <h3>Abra a câmera</h3>
-                        <p>O ícone do Ajuste Rápido aparece automaticamente na interface.</p>
-                    </li>
-
-                    <li class="passo">
-                        <div class="numero-passo">2</div>
-                        <h3>Toque na função</h3>
-                        <p>Um toque ativa a detecção de luz, distância, movimento e cena.</p>
-                    </li>
-
-                    <li class="passo">
-                        <div class="numero-passo">3</div>
-                        <h3>Configurações aplicadas</h3>
-                        <p>ISO, exposição, foco e balanço de branco ajustados automaticamente.</p>
-                    </li>
-
-                    <li class="passo">
-                        <div class="numero-passo numero-claro">4</div>
-                        <h3>Confirme ou ajuste</h3>
-                        <p>Aceite ou edite manualmente antes de capturar a foto.</p>
-                    </li>
-                </ol>
-
-            </div>
-        </section>
-
-        <section class="recursos" id="recursos">
-            <div class="container">
-
-                <header class="cabecalho-secao alinhamento-esquerdo">
-                    <span class="tag-clara">Recursos</span>
-                    <h2 class="titulo-secao">
-                        Tudo que você precisa, <br>
-                        num toque
-                    </h2>
-                    <p class="paragrafo">
-                        5 funcionalidades que tornam o Ajuste Rápido completo e intuitivo.
-                    </p>
-                </header>
-
-                <ul class="grade-recursos">
-                    <li class="card-recurso">
-                        <div class="icon-recurso">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12 6 12 12 16 14" />
-                            </svg>
-                        </div>
-                        <h3>Botão rápido</h3>
-                        <p>Sempre visível na interface da câmera — ativado com 1 toque, sem menus ou configurações extras.</p>
-                    </li>
-
-                    <li class="card-recurso destaque-azul">
-                        <div class="icon-recurso">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="7" height="7" />
-                                <rect x="14" y="3" width="7" height="7" />
-                                <rect x="3" y="14" width="7" height="7" />
-                                <rect x="14" y="14" width="7" height="7" />
-                            </svg>
-                        </div>
-                        <h3>Slots personalizados</h3>
-                        <p>Crie e salve configurações favoritas com nome único. Limite de slots pode variar conforme a versão.</p>
-                    </li>
-
-                    <li class="card-recurso">
-                        <div class="icon-recurso">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </div>
-                        <h3>Auto ou slot</h3>
-                        <p>Escolha entre o modo automático ou um dos seus slots salvos — o slot sempre tem prioridade.
+                        <p class="descricao-hero">
+                            O Ajuste Rápido detecta a cena e aplica
+                            automaticamente as
+                            melhores configurações — em até 2 segundos, sem você
+                            tocar em nada.
                         </p>
-                    </li>
 
-                    <li class="card-recurso">
-                        <div class="icon-recurso">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <path d="M8 12 L11 15 L16 9" />
-                            </svg>
+                        <div class="botoes-hero">
+                            <a href="#recursos" class="btn btn-azul">Conhecer a
+                                função</a>
+                            <a href="#como-funciona" class="btn btn-borda">Ver
+                                como funciona</a>
                         </div>
-                        <h3>Detecção automática offline</h3>
-                        <p>Detecta cena, luminosidade, distância e movimento com processamento 100% local — sem precisar de internet em nenhuma condição.</p>
-                    </li>
+                    </div>
 
-                    <li class="card-recurso">
-                        <div class="icon-recurso">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                                <circle cx="12" cy="13" r="4" />
-                            </svg>
+                    <div class="slideshow">
+                        <div class="tags-camera">
+                            <span class="tag-info" id="tag-iso">ISO 200</span>
+                            <span class="tag-info"
+                                id="tag-aperture">f/1.8</span>
+                            <span class="tag-info"
+                                id="tag-shutter">1/120s</span>
                         </div>
-                        <h3>Todos os modos</h3>
-                        <p>Compatível com foto, vídeo, retrato e todos os modos de câmera disponíveis no app.</p>
-                    </li>
+
+                        <div class="camera-box">
+                            <div class="anel-camera">
+                                <div class="botao-camera"></div>
+                            </div>
+                        </div>
+
+                        <div class="rodape-camera">
+                            <button type="button" id="btn-ajustar"
+                                class="btn btn-azul btn-mini">Ajuste
+                                Rápido</button>
+                        </div>
+
+                        <div class="bolinhas">
+                            <button type="button" class="bolinha ativa"
+                                data-slide="0" aria-label="Slide 1"></button>
+                            <button type="button" class="bolinha" data-slide="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" class="bolinha" data-slide="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="problema" id="problema">
+                <div class="container problema-flex">
+
+                    <div class="problema-texto">
+                        <span class="tag-clara">O problema</span>
+
+                        <h2 class="titulo-secao">
+                            Configurar a câmera <br>
+                            é difícil e lento
+                        </h2>
+
+                        <p class="paragrafo">
+                            Antes do Ajuste Rápido, cada foto exigia ajustes
+                            manuais complexos
+                            — e o momento perfeito se perdia enquanto o usuário
+                            tentava acertar
+                            ISO, foco e exposição.
+                        </p>
+                    </div>
+
+                    <ul class="lista-problemas">
+                        <li class="item-problema">
+                            <div class="iconinho">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <div class="texto-item">
+                                <h3>Configurações manuais complexas</h3>
+                                <p>ISO, exposição, foco e balanço de branco —
+                                    tudo manual, tudo lento demais.</p>
+                            </div>
+                        </li>
+
+                        <li class="item-problema">
+                            <div class="iconinho">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </div>
+                            <div class="texto-item">
+                                <h3>Momentos perdidos</h3>
+                                <p>Enquanto o usuário ajusta as configurações, a
+                                    cena ideal já passou.</p>
+                            </div>
+                        </li>
+
+                        <li class="item-problema">
+                            <div class="iconinho">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2 L12 22 M2 12 L22 12" />
+                                </svg>
+                            </div>
+                            <div class="texto-item">
+                                <h3>Resultados inconsistentes</h3>
+                                <p>Luz diferente, modo errado — fotos sempre
+                                    aquém do esperado.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="como-funciona" id="como-funciona">
+                <div class="container">
+
+                    <header class="cabecalho-secao">
+                        <span class="tag-clara">Como funciona</span>
+                        <h2 class="titulo-secao">4 passos, 1 toque</h2>
+                        <p class="paragrafo">
+                            Do abrir a câmera à foto perfeita, tudo em menos de
+                            2 segundos.
+                        </p>
+                    </header>
+
+                    <ol class="passos">
+                        <li class="passo">
+                            <div class="numero-passo">1</div>
+                            <h3>Abra a câmera</h3>
+                            <p>O ícone do Ajuste Rápido aparece automaticamente
+                                na interface.</p>
+                        </li>
+
+                        <li class="passo">
+                            <div class="numero-passo">2</div>
+                            <h3>Toque na função</h3>
+                            <p>Um toque ativa a detecção de luz, distância,
+                                movimento e cena.</p>
+                        </li>
+
+                        <li class="passo">
+                            <div class="numero-passo">3</div>
+                            <h3>Configurações aplicadas</h3>
+                            <p>ISO, exposição, foco e balanço de branco
+                                ajustados automaticamente.</p>
+                        </li>
+
+                        <li class="passo">
+                            <div class="numero-passo numero-claro">4</div>
+                            <h3>Confirme ou ajuste</h3>
+                            <p>Aceite ou edite manualmente antes de capturar a
+                                foto.</p>
+                        </li>
+                    </ol>
+
+                </div>
+            </section>
+
+            <section class="recursos" id="recursos">
+                <div class="container">
+
+                    <header class="cabecalho-secao alinhamento-esquerdo">
+                        <span class="tag-clara">Recursos</span>
+                        <h2 class="titulo-secao">
+                            Tudo que você precisa, <br>
+                            num toque
+                        </h2>
+                        <p class="paragrafo">
+                            5 funcionalidades que tornam o Ajuste Rápido
+                            completo e intuitivo.
+                        </p>
+                    </header>
+
+                    <ul class="grade-recursos">
+                        <li class="card-recurso">
+                            <div class="icon-recurso">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </div>
+                            <h3>Botão rápido</h3>
+                            <p>Sempre visível na interface da câmera — ativado
+                                com 1 toque, sem menus ou configurações
+                                extras.</p>
+                        </li>
+
+                        <li class="card-recurso destaque-azul">
+                            <div class="icon-recurso">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7" />
+                                    <rect x="14" y="3" width="7" height="7" />
+                                    <rect x="3" y="14" width="7" height="7" />
+                                    <rect x="14" y="14" width="7" height="7" />
+                                </svg>
+                            </div>
+                            <h3>Slots personalizados</h3>
+                            <p>Crie e salve configurações favoritas com nome
+                                único. Limite de slots pode variar conforme a
+                                versão.</p>
+                        </li>
+
+                        <li class="card-recurso">
+                            <div class="icon-recurso">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </div>
+                            <h3>Auto ou slot</h3>
+                            <p>Escolha entre o modo automático ou um dos seus
+                                slots salvos — o slot sempre tem prioridade.</p>
+                        </li>
+
+                        <li class="card-recurso">
+                            <div class="icon-recurso">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 12 L11 15 L16 9" />
+                                </svg>
+                            </div>
+                            <h3>Detecção automática offline</h3>
+                            <p>Detecta cena, luminosidade, distância e movimento
+                                com processamento 100% local — sem precisar de
+                                internet em nenhuma condição.</p>
+                        </li>
+
+                        <li class="card-recurso">
+                            <div class="icon-recurso">
+                                <svg viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                    <circle cx="12" cy="13" r="4" />
+                                </svg>
+                            </div>
+                            <h3>Todos os modos</h3>
+                            <p>Compatível com foto, vídeo, retrato e todos os
+                                modos de câmera disponíveis no app.</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="garantias" id="garantias">
+                <div class="container">
+
+                    <header class="cabecalho-secao alinhamento-esquerdo">
+                        <span class="tag-azul">Garantias técnicas</span>
+                        <h2 class="titulo-secao titulo-branco">
+                            Performance que <br>
+                            você pode confiar
+                        </h2>
+                        <p class="paragrafo paragrafo-claro">
+                            Os requisitos não funcionais que garantem uma
+                            experiência fluida <br>
+                            em qualquer situação.
+                        </p>
+                    </header>
+
+                    <ul class="grade-garantias">
+                        <li class="box-garantia">
+                            <div class="valor-destaque">≤ 2s</div>
+                            <h3>Ajuste ultrarrápido</h3>
+                            <p>Tempo máximo de detecção e aplicação das
+                                configurações ideais.</p>
+                        </li>
+
+                        <li class="box-garantia">
+                            <div class="valor-destaque">1x</div>
+                            <h3>Um toque, pronto</h3>
+                            <p>Interface acessível sem curva de aprendizado ou
+                                menus complexos.</p>
+                        </li>
+
+                        <li class="box-garantia">
+                            <div class="valor-destaque">Offline</div>
+                            <h3>Funciona sem internet</h3>
+                            <p>Processamento 100% local em qualquer condição de
+                                conectividade.</p>
+                        </li>
+
+                        <li class="box-garantia">
+                            <div class="valor-destaque">HD+</div>
+                            <h3>Alta qualidade</h3>
+                            <p>Ajustes inteligentes que preservam resolução e
+                                detalhes da imagem.</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="grupo" id="grupo">
+                <div class="container grupo-flex">
+
+                    <div class="grupo-texto">
+                        <h2 class="titulo-secao titulo-branco">
+                            Desenvolvido pelo <br>
+                            Grupo DevX
+                        </h2>
+                        <p class="paragrafo paragrafo-claro">
+                            Um projeto que reimagina a experiência de fotografia
+                            mobile —
+                            simples, rápido e inteligente. Conheça a equipe por
+                            trás do
+                            Ajuste Rápido.
+                        </p>
+                    </div>
+
+                    <aside class="card-integrantes">
+                        <p class="legenda-card">INTEGRANTES DO GRUPO</p>
+                        <ul class="lista-nomes">
+                            <li><span class="nome-tag">Lucas Zezzi</span></li>
+                            <li><span class="nome-tag">Felipe
+                                    Moreira</span></li>
+                            <li><span class="nome-tag">Romulo Mendes</span></li>
+                            <li><span class="nome-tag">Diego Candido</span></li>
+                        </ul>
+                    </aside>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="rodape">
+            <div class="container rodape-flex">
+                <a href="index.html" class="logo">DevX</a>
+                <ul class="links-rodape">
+                    <li><a href="#problema">O problema</a></li>
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#grupo">Grupo</a></li>
                 </ul>
-
             </div>
-        </section>
+        </footer>
 
-
-        <section class="garantias" id="garantias">
-            <div class="container">
-
-                <header class="cabecalho-secao alinhamento-esquerdo">
-                    <span class="tag-azul">Garantias técnicas</span>
-                    <h2 class="titulo-secao titulo-branco">
-                        Performance que <br>
-                        você pode confiar
-                    </h2>
-                    <p class="paragrafo paragrafo-claro">
-                        Os requisitos não funcionais que garantem uma experiência fluida <br>
-                        em qualquer situação.
-                    </p>
-                </header>
-
-                <ul class="grade-garantias">
-                    <li class="box-garantia">
-                        <div class="valor-destaque">≤ 2s</div>
-                        <h3>Ajuste ultrarrápido</h3>
-                        <p>Tempo máximo de detecção e aplicação das configurações ideais.</p>
-                    </li>
-
-                    <li class="box-garantia">
-                        <div class="valor-destaque">1x</div>
-                        <h3>Um toque, pronto</h3>
-                        <p>Interface acessível sem curva de aprendizado ou menus complexos.</p>
-                    </li>
-
-                    <li class="box-garantia">
-                        <div class="valor-destaque">Offline</div>
-                        <h3>Funciona sem internet</h3>
-                        <p>Processamento 100% local em qualquer condição de conectividade.</p>
-                    </li>
-
-                    <li class="box-garantia">
-                        <div class="valor-destaque">HD+</div>
-                        <h3>Alta qualidade</h3>
-                        <p>Ajustes inteligentes que preservam resolução e detalhes da imagem.</p>
-                    </li>
-                </ul>
-
-            </div>
-        </section>
-
-        <section class="grupo" id="grupo">
-      <div class="container grupo-flex">
-
-        <div class="grupo-texto">
-          <h2 class="titulo-secao titulo-branco">
-            Desenvolvido pelo <br>
-            Grupo DevX
-          </h2>
-          <p class="paragrafo paragrafo-claro">
-            Um projeto que reimagina a experiência de fotografia mobile —
-            simples, rápido e inteligente. Conheça a equipe por trás do
-            Ajuste Rápido.
-          </p>
-        </div>
-
-        <aside class="card-integrantes">
-          <p class="legenda-card">INTEGRANTES DO GRUPO</p>
-          <ul class="lista-nomes">
-            <li><span class="nome-tag">Lucas Zezzi</span></li>
-            <li><span class="nome-tag">Felipe Moreira</span></li>
-            <li><span class="nome-tag">Romulo Mendes</span></li>
-            <li><span class="nome-tag">Diego Candido</span></li>
-          </ul>
-        </aside>
-
-      </div>
-    </section>
-    
-    </main>
-
-    <footer class="rodape">
-        <div class="container rodape-flex">
-            <a href="index.html" class="logo">DevX</a>
-            <ul class="links-rodape">
-                <li><a href="#problema">O problema</a></li>
-                <li><a href="#como-funciona">Como funciona</a></li>
-                <li><a href="#recursos">Recursos</a></li>
-                <li><a href="#grupo">Grupo</a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
-
+        <script src="js/main.js"></script>
+    </body>
 </html>
