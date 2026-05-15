@@ -592,6 +592,64 @@ ol {
   line-height: 1.6;
 }
 
+/* ============ GRUPO ============ */
+.grupo {
+  background-color: var(--azul);
+  padding: 100px 0;
+}
+
+.grupo-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.grupo-texto {
+  flex: 1 1 400px;
+  color: var(--branco);
+}
+
+.grupo-texto .paragrafo-claro {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card-integrantes {
+  flex: 1 1 360px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 32px;
+  border-radius: 16px;
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.legenda-card {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.lista-nomes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nome-tag {
+  display: inline-block;
+  background-color: var(--branco);
+  color: var(--azul);
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
 /* ============ RODAPE ============ */
 .rodape {
   background-color: var(--azul-escuro);
