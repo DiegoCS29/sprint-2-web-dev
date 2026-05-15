@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevX | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-login">
+
+    <header class="topo">
+        <nav class="menu">
+            <a href="index.html" class="logo">DevX</a>
+            <ul class="menu-itens">
+                <li><a href="index.html#problema">O problema</a></li>
+                <li><a href="index.html#como-funciona">Como funciona</a></li>
+                <li><a href="index.html#recursos">Recursos</a></li>
+                <li><a href="index.html#garantias">Garantias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="centro-login">
+        <div class="caixa-login">
+
+            <h1 class="titulo-login">Entrar</h1>
+            <p class="subtitulo-login">Acesse sua conta para ver seus slots salvos.</p>
+
+            <form id="formLogin" class="form" novalidate>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+                </div>
+
+                <button type="submit" class="btn btn-azul btn-largo">Entrar</button>
+
+            </form>
+
+            <p class="dica-login">
+                Teste com: <code>devx@fiap.com.br</code> / <code>devx2026</code>
+            </p>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-flex">
+            <a href="index.html" class="logo">DevX</a>
+            <ul class="links-rodape">
+                <li><a href="index.html#problema">O problema</a></li>
+                <li><a href="index.html#como-funciona">Como funciona</a></li>
+                <li><a href="index.html#recursos">Recursos</a></li>
+                <li><a href="index.html#grupo">Grupo</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
